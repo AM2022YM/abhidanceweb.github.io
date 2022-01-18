@@ -38,6 +38,6 @@ app.post('/contact',(req,res)=>{
     })
 })
 
-app.listen(port,()=>{
-    console.log(`The application is started succesfully on port ${port}`);
-});
+// app.listen(port,()=>{
+//     console.log(`The application is started succesfully on port ${port}`);
+// });
