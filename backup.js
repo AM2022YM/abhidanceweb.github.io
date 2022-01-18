@@ -1,7 +1,6 @@
 const express = require('express');
 const path=require('path');
 const app=express();
-const port=8000;
 const bodyparser=require("body-parser");
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/contactdance');
@@ -37,7 +36,3 @@ app.post('/contact',(req,res)=>{
         res.status(400).send("Item has not been saved to the database")
     })
 })
-
-// app.listen(port,()=>{
-//     console.log(`The application is started succesfully on port ${port}`);
-// });
